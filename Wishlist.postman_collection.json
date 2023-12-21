@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "8b438eec-e836-4431-95c3-304342c2d4e8",
+		"name": "Wishlist",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2431708",
+		"_collection_link": "https://grey-rocket-974246.postman.co/workspace/trenkus~1023a8ba-c8e7-459c-b975-f4f37d1b24d1/collection/2431708-8b438eec-e836-4431-95c3-304342c2d4e8?action=share&source=collection_link&creator=2431708"
+	},
+	"item": [
+		{
+			"name": "Add a Product to Customer's Wishlist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiY3VzdG9tZXJJZCI6IjQxMjQ2MzYyMzkxMjQzZTdiMWJkZjkxNGU5Y2YzNTg0IiwiaWF0IjoxNTE2MjM5MDIyfQ.teBWXEUWun0HMduclx4d8taMU4ziY4YV_6xwDB99g-g",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"productId\": \"87546362391243e7b1bdf914e9ca9d7e\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/wishlists/add-product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"wishlists",
+						"add-product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrive All Products From  Customer's Wishlist",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiY3VzdG9tZXJJZCI6IjQxMjQ2MzYyMzkxMjQzZTdiMWJkZjkxNGU5Y2YzNTg0IiwiaWF0IjoxNTE2MjM5MDIyfQ.teBWXEUWun0HMduclx4d8taMU4ziY4YV_6xwDB99g-g",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/wishlists/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"wishlists",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrive a Product from Customer's Wishlist",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiY3VzdG9tZXJJZCI6IjQxMjQ2MzYyMzkxMjQzZTdiMWJkZjkxNGU5Y2YzNTg0IiwiaWF0IjoxNTE2MjM5MDIyfQ.teBWXEUWun0HMduclx4d8taMU4ziY4YV_6xwDB99g-g",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/wishlists/products/87546362391243e7b1bdf914e9ca9d7e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"wishlists",
+						"products",
+						"87546362391243e7b1bdf914e9ca9d7e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a Product from Customer's Wishlist",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiY3VzdG9tZXJJZCI6IjQxMjQ2MzYyMzkxMjQzZTdiMWJkZjkxNGU5Y2YzNTg0IiwiaWF0IjoxNTE2MjM5MDIyfQ.teBWXEUWun0HMduclx4d8taMU4ziY4YV_6xwDB99g-g",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/wishlists/products/87546362391243e7b1bdf914e9ca9d7e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"wishlists",
+						"products",
+						"87546362391243e7b1bdf914e9ca9d7e"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

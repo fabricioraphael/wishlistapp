@@ -35,6 +35,6 @@ build/
 # comment .env
 #docker-local/.env
 
-mongo_data/*
+docker-local/mongo_data/*
 
 .DS_Store
